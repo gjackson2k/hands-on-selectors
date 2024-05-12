@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Add your CSS here */
+    <style>
+      /* Basic Selectors */
+      * {
+        background-color:grey;
+      }
+      div {
+        font-size: 18px;
+      }
+      li {
+        font-size: 14px;
+      }
+
+      /* Class and ID Selectors */
+      .highlight {
+        background-color: yellow;
+      }
+      #main-span {
+        color: blue;
+      }
+
+      /* Combining Selectors */
+      span b {
+        background-color: green;
+      }
+      ul li:nth-child(odd) {
+        background-color: red;
+      }
+
+      /* Attribute Selectors */
+      li[data-info="special"] {
+        font-style: italic;
+      }
+
+      /* Pseudo-classes and Pseudo-elements */
+      li:hover {
+        background-color: lightblue;
+      }
+      li::first-letter {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    </style>
+  </style>
+</head>
+<body>
+  <div>This is a div</div>
+  <span id="main-span">This is a span</span>
+  <div class="highlight">
+    <span>
+      <b>nested text</b>
+    </span>
+  </div>
+  <ul>
+    <li data-info="special">Item 1</li>
+    <li>Item 2</li>
+    <li data-info="special">Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+</body>
+</html>
